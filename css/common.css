@@ -76,8 +76,18 @@ spam.hessai-text {
   justify-content: center;
 }
 
+.contact {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  margin: 10px;
+}
+
+#message {
+  margin: 20px;
+}
+
 footer {
   height:125px;
   text-align: center;
-  
 }

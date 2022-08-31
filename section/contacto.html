@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>HessaiPorfolio</title>
     <link rel="stylesheet" href="../css/common.css">
 </head>
+
 <body>
     <header class="gradient-deserver">
         <nav>
@@ -29,6 +31,43 @@
             </ul>
         </nav>
     </header>
+    <main class="container">
+        <section class="edit-colors-buttons">
+            <button class="button darkmode">
+                Darkmode
+            </button>
+            <button class="button change-color">
+                changecolor
+            </button>
+        </section>
+        <section>
+            <H2 class="hessai-text">
+                CONTACT
+            </H2>
+            <p class="hessai-text">
+                Interested in my work? Fill out the form below with some info about your proyect and i will
+                get back to you as soon as I can. Please allow a couple days for me to respond.
+            </p>
+        </section>
+        <section class="contact">
+            <form class="contact-form" action="#">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="Email" name="Email">
+                <label for="budget">Budget:</label>
+                <input type="email" id="Email" name="Email">
+                <label for="mensaje">Message:</label>
+                <div id="message">
+                    <p>Tell me a little about your project / comission</p>
+                    <textarea cols="50" rows="10" name="text-area"></textarea>
+                </div>
+                <div class="help-buttons">
+                    <button name="limpiar" id="boton-limpiar">Limpiar</button>
+                    <button name="enviar" id="boton-enviar">Enviar</button>
+                </div>
+            </form>
+    </main>
     <footer class="gradient-deserver">
         <section class="contact-info">
             <p>
@@ -45,4 +84,5 @@
         </section>
     </footer>
 </body>
+
 </html>
