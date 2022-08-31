@@ -9,20 +9,22 @@
 
 :root {
   /* Declaro variables CSS con colores principales */
-  --color-success: #28a745;
-  --color-warning: #ffc107;
-  --color-error: #dc3545;
-  --color-theme: #8bae8e;
-  --color-active: #5a1f5c;
-  --color-back-active: #00ffd5;
+  --color-text: #cf8c99;
+  --color-theme: #176160;
+  --color-active: #4bbea1;
+  --color-back-active: #259998;
   --color-gradient-1: #1b75ad;
   --color-gradient-2: #29d0de;
   --color-gradient: linear-gradient(to right, var(--color-gradient-1),
       var(--color-gradient-2));
 }
 
+.gradient-deserver {
+  background-image: var(--color-gradient);
+}
 
 nav>ul {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -30,23 +32,40 @@ nav>ul {
   top: 0;
 }
 
-.gradient-deserver {
-  background-image: var(--color-gradient); 
-}
-
 body {
   background-color: var(--color-theme);
 }
 
-h1 {
-  text-align: center;
+.hessai-text {
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin: 10px;
+}
+
+spam.hessai-text {
+  margin-bottom: 20px;
+}
+
+.front-image {
+  display: flex;
+  justify-content: center;
+}
+
+.about-elements {
+  display: flex;
+  justify-content: center;
 }
 
 footer {
-  display: flex;
+  text-align: center;
+  padding: 3px;
+  position: relative;
   bottom: 0px;
+  background: var(--color-gradient);
+  width: 100%;
+  text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
-
