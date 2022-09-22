@@ -1,15 +1,17 @@
 @import url(‘https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap’);
 
+/* mobile first */
+
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
 }
 
 :root {
   /* Declaro variables CSS con colores principales */
   --color-text: #cf8c99;
+  --color-text-hovered: #ecb5c0;
   --color-theme: #176160;
   --color-active: #4bbea1;
   --color-back-active: #259998;
@@ -18,42 +20,41 @@
   --color-gradient: linear-gradient(to right, var(--color-gradient-1),
       var(--color-gradient-2));
 }
-html, body {
-  height: 100%;
+
+body {
+  text-align: center;
+  background-color: var(--color-theme);
+  min-height: 100vh;
+}
+
+nav {
+  margin-bottom: 20px;
 }
 
 .gradient-deserver {
   background-image: var(--color-gradient);
 }
 
-nav>ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  padding: 60px;
-  top: 0;
-}
-
-body {
-  background-color: var(--color-theme);
-}
-
-.container {
-  min-height: 100%;
-}
-
-.container article {
-  overflow: auto;
-  padding-bottom: 100px;
-}
-
 .hessai-text {
   color: var(--color-text);
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-  margin: 10px;
+  margin-bottom: 100px;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+footer .darked {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.front-image:hover {
+  transform: scale(1.2, 1.2);
+  transition: 0.5s;
+}
+
+.container-gallerys {
+  margin: 20px;
 }
 
 #about-me-text {
@@ -62,32 +63,5 @@ body {
   margin-right: 200px;
 }
 
-spam.hessai-text {
-  margin-bottom: 20px;
-}
 
-.front-image {
-  display: flex;
-  justify-content: center;
-}
-
-.about-elements {
-  display: flex;
-  justify-content: center;
-}
-
-.contact {
-  display: flex;
-  justify-content: center;
-  padding: 50px;
-  margin: 10px;
-}
-
-#message {
-  margin: 20px;
-}
-
-footer {
-  height:125px;
-  text-align: center;
-}
+@media(min-width: 768px) {}
