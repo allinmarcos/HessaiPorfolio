@@ -1,0 +1,22 @@
+.contact{
+    #contactForm {
+        .mb-3{
+            .form-label {
+                margin: 5px;
+                color: var(--color-text);
+            }
+        }
+    }
+}
+
+.contactForm {
+    display: grid;
+    grid-template-columns: 2fr;  
+    grid-template-rows: 3fr;
+    grid-template-areas: 
+      
+    "name custom-select" 
+    "emailAddress emailAddress" 
+    "message message"    
+    ;
+}

@@ -1,0 +1,16 @@
+.container-gallerys {
+    display: grid;
+    grid-template-columns: 2fr;  
+    grid-template-rows: 3fr;
+    grid-template-areas: 
+      
+    "null null" 
+    "carousel-2 carousel-2" 
+    "null null"    
+    ;
+
+    .carousel {
+        height: 300px;
+        width: 300px;
+    }
+}

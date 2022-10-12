@@ -1,0 +1,41 @@
+@import "fonts";
+@import "common";
+@import "nav";
+@import "porfolio";
+@import "about";
+@import "contacto";
+@import "reel";
+
+/* mobile first */
+
+:root {
+  /* Declaro variables CSS con colores principales */
+  --color-text: #cf8c99;
+  --color-text-hovered: #ecb5c0;
+  --color-theme: #176160;
+  --color-active: #4bbea1;
+  --color-back-active: #259998;
+  --color-gradient-1: #1b75ad;
+  --color-gradient-2: #29d0de;
+  --color-gradient: linear-gradient(to right, var(--color-gradient-1),
+      var(--color-gradient-2));
+}
+
+.gradient-deserver {
+  background-image: var(--color-gradient);
+}
+
+.front-image {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.front-image:hover {
+  transform: scale(1.2, 1.2);
+  transition: 0.5s;
+}
+
+
+@media(min-width: 768px) {
+
+
+}
