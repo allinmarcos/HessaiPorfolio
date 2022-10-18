@@ -1,3 +1,19 @@
+@mixin padding-top {
+    padding-top: 20px;  
+}
+
 .reel {
-    margin: 100px;
+    position: relative;
+    padding-bottom: 56.25%;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.reel-text {
+    @include padding-top;
 }
