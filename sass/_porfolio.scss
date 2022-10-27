@@ -1,16 +1,24 @@
-.container-gallerys {
-    display: grid;
-    grid-template-columns: 2fr;  
-    grid-template-rows: 3fr;
-    grid-template-areas: 
-      
-    "null null" 
-    "carousel-2 carousel-2" 
-    "null null"    
-    ;
-
+.container-carousel {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
     .carousel {
         height: 300px;
         width: 300px;
     }
+}
+
+.gallery-text{
+    @extend .about-me-text;
+}
+
+.card-body{
+    background-color: var(--color-active);
+    .card-text {
+        color: var(--color-dark-green);
+    }
+}
+
+.card{
+    border: 1px solid var(--color-hessai-red);
 }

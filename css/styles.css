@@ -12,7 +12,7 @@ body {
   min-height: 100vh;
 }
 
-.hessai-text, .about-me-text {
+.hessai-text, .about-me-text, .gallery-text {
   color: var(--color-text);
   margin-bottom: 100px;
 }
@@ -28,18 +28,28 @@ nav {
   margin-bottom: 20px;
 }
 
-.container-gallerys {
-  display: grid;
-  grid-template-columns: 2fr;
-  grid-template-rows: 3fr;
-  grid-template-areas: "null null" "carousel-2 carousel-2" "null null";
+.container-carousel {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
 }
-.container-gallerys .carousel {
+.container-carousel .carousel {
   height: 300px;
   width: 300px;
 }
 
-.about-me-text {
+.card-body {
+  background-color: var(--color-active);
+}
+.card-body .card-text {
+  color: var(--color-dark-green);
+}
+
+.card {
+  border: 1px solid var(--color-hessai-red);
+}
+
+.about-me-text, .gallery-text {
   margin-bottom: 30px;
   text-shadow: 2px 2px #273b31;
 }
@@ -75,8 +85,10 @@ nav {
 /* mobile first */
 :root {
   /* Declaro variables CSS con colores principales */
+  --color-hessai-red: #d56b6c;
   --color-text: #cf8c99;
   --color-text-hovered: #ecb5c0;
+  --color-dark-green: #092322;
   --color-theme: #176160;
   --color-active: #4bbea1;
   --color-back-active: #259998;
