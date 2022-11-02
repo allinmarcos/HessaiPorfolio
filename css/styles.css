@@ -7,7 +7,6 @@
 }
 
 body {
-  display: flex;
   text-align: center;
   background-color: var(--color-theme);
   min-height: 100vh;
