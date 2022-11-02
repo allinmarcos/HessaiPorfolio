@@ -1,12 +1,3 @@
-.container-carousel {
-    display: flex;
-    justify-content: center;
-    margin: 50px;
-    .carousel {
-        height: 300px;
-        width: 300px;
-    }
-}
 
 .gallery-text{
     @extend .about-me-text;
