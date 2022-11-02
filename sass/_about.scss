@@ -1,9 +1,20 @@
-.about-me-text {
-    @extend .hessai-text;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px #273b31
-}
+.about-elements {
+    display: flex;
+    flex-direction: column;
 
-.about-image {
-    width: 20%;
+
+    .about-me-text {
+        @extend .hessai-text;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px #273b31
+    }
+
+    .about-image {
+        width: 20%;
+    }
+
+    p {
+
+        justify-content: center;
+    }
 }

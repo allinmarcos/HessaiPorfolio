@@ -12,7 +12,7 @@ body {
   min-height: 100vh;
 }
 
-.hessai-text, .about-me-text, .gallery-text {
+.hessai-text, .about-elements .about-me-text, .about-elements .gallery-text {
   color: var(--color-text);
   margin-bottom: 100px;
 }
@@ -39,13 +39,19 @@ nav {
   border: 1px solid var(--color-hessai-red);
 }
 
-.about-me-text, .gallery-text {
+.about-elements {
+  display: flex;
+  flex-direction: column;
+}
+.about-elements .about-me-text, .about-elements .gallery-text {
   margin-bottom: 10px;
   text-shadow: 2px 2px #273b31;
 }
-
-.about-image {
+.about-elements .about-image {
   width: 20%;
+}
+.about-elements p {
+  justify-content: center;
 }
 
 .contact #contactForm .mb-3 .form-label {
