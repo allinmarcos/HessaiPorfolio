@@ -7,6 +7,7 @@
 }
 
 body {
+  display: flex;
   text-align: center;
   background-color: var(--color-theme);
   min-height: 100vh;
@@ -50,20 +51,17 @@ nav {
 }
 
 .about-me-text, .gallery-text {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-shadow: 2px 2px #273b31;
+}
+
+.about-image {
+  width: 20%;
 }
 
 .contact #contactForm .mb-3 .form-label {
   margin: 5px;
   color: var(--color-text);
-}
-
-.contactForm {
-  display: grid;
-  grid-template-columns: 2fr;
-  grid-template-rows: 3fr;
-  grid-template-areas: "name custom-select" "emailAddress emailAddress" "message message";
 }
 
 .reel {
