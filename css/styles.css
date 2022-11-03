@@ -14,7 +14,12 @@ body {
 
 .hessai-text, .about-elements .about-me-text, .about-elements .gallery-text {
   color: var(--color-text);
-  margin-bottom: 100px;
+  text-shadow: 2px 2px #273b31;
+}
+
+.hessai-saludando-items {
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 footer {
@@ -28,6 +33,16 @@ nav {
   margin-bottom: 20px;
 }
 
+.container-carousel {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+.container-carousel .carousel {
+  height: 300px;
+  width: 300px;
+}
+
 .card-body {
   background-color: var(--color-active);
 }
@@ -39,15 +54,23 @@ nav {
   border: 1px solid var(--color-hessai-red);
 }
 
+.about-items {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
 .about-elements {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 .about-elements .about-me-text, .about-elements .gallery-text {
+  display: flex;
+  justify-content: center;
   margin: 10px;
   text-shadow: 2px 2px #273b31;
-  text-align: justify;
-  justify-content: center;
 }
 .about-elements .about-image {
   width: 20%;
@@ -59,6 +82,11 @@ nav {
 .contact #contactForm .mb-3 .form-label {
   margin: 5px;
   color: var(--color-text);
+}
+
+.contact-items {
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .reel {

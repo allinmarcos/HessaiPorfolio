@@ -1,14 +1,23 @@
+.about-items {
+
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+}
+
 .about-elements {
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 60px;
 
     .about-me-text {
         @extend .hessai-text;
+        display: flex;
+        justify-content: center;
         margin: 10px;
         text-shadow: 2px 2px #273b31;
-        text-align: justify;
-        justify-content: center;
     }
 
     .about-image {
