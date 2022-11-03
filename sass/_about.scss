@@ -5,16 +5,17 @@
 
     .about-me-text {
         @extend .hessai-text;
-        margin-bottom: 10px;
-        text-shadow: 2px 2px #273b31
+        margin: 10px;
+        text-shadow: 2px 2px #273b31;
+        text-align: justify;
+        justify-content: center;
     }
 
     .about-image {
         width: 20%;
     }
 
-    p {
-
-        justify-content: center;
+    h1 {
+        margin: 20px;
     }
 }

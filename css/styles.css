@@ -44,14 +44,16 @@ nav {
   flex-direction: column;
 }
 .about-elements .about-me-text, .about-elements .gallery-text {
-  margin-bottom: 10px;
+  margin: 10px;
   text-shadow: 2px 2px #273b31;
+  text-align: justify;
+  justify-content: center;
 }
 .about-elements .about-image {
   width: 20%;
 }
-.about-elements p {
-  justify-content: center;
+.about-elements h1 {
+  margin: 20px;
 }
 
 .contact #contactForm .mb-3 .form-label {
